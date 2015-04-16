@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:jeremy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.demo.huibin.myandroidapplication.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/editText"
+        tools:text="@string/hello_world"/>
+
+    <com.demo.huibin.myandroidapplication.com.demo.huibin.myandroidapplication.view.YYKAdView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        jeremy:radius="40dp"
+        jeremy:src="@drawable/ad"
+        jeremy:text="@string/hello_world"
+        jeremy:tetxColor="@color/material_blue_grey_800"
+        />
+
+
+
+</LinearLayout>

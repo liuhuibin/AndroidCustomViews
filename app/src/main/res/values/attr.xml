@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="YYKAdView">
+        <attr name="src" format="reference" />
+        <attr name="radius" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension"/>
+        <attr name="tetxColor" format="color"/>
+    </declare-styleable>
+</resources>
