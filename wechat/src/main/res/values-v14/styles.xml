@@ -1,0 +1,13 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionOverflowButtonStyle">@style/weChatActionOverflowButtonStyle</item>
+    </style>
+    
+    <style name="weChatActionOverflowButtonStyle">
+        <item name="android:src">@drawable/actionbar_more</item>
+    </style>
+
+</resources>

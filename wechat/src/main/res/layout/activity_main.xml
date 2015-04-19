@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jeremy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tab_background"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+
+        <com.huibin.wechat.MagicTabIndicator
+            android:id="@+id/tab_indicator_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            jeremy:tabIcon="@drawable/ic_menu_start_conversation"
+            jeremy:tabColor="#ff45c01a"
+            jeremy:text="@string/tab_main"
+            android:padding="5dp"/>
+        <com.huibin.wechat.MagicTabIndicator
+            android:id="@+id/tab_indicator_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            jeremy:tabIcon="@drawable/ic_menu_friendslist"
+            jeremy:tabColor="#ff45c01a"
+            jeremy:text="@string/tab_contact"
+            android:padding="5dp"/>
+        <com.huibin.wechat.MagicTabIndicator
+            android:id="@+id/tab_indicator_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            jeremy:tabIcon="@drawable/ic_menu_emoticons"
+            jeremy:tabColor="#ff45c01a"
+            jeremy:text="@string/tab_find"
+            android:padding="5dp"/>
+        <com.huibin.wechat.MagicTabIndicator
+            android:id="@+id/tab_indicator_fourth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            jeremy:tabIcon="@drawable/ic_menu_allfriends"
+            jeremy:tabColor="#ff45c01a"
+            jeremy:text="@string/tab_me"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
