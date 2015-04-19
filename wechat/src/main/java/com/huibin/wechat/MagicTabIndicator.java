@@ -115,15 +115,22 @@ public class MagicTabIndicator extends View {
     }
 
     private void drawSourceText(Canvas canvas, int alpha) {
-        mTextPaint.setAlpha(255-alpha);
+        //下面两行代码顺序不能颠倒，原因：setAlpha() is the helper to setColor(), that only assigns the color's alpha value,
+        //leaving its r,g,b values unchanged.
+        //颠倒的话setAlpha()将相当于没有起到作用
         mTextPaint.setColor(Color.BLACK);
+        mTextPaint.setAlpha(255 - alpha);
+
         canvas.drawText(mText,getMeasuredWidth()/2-mTextBounds.width()/2,mIconRect.bottom+mTextBounds.height(),mTextPaint);
 
     }
 
     private void drawTargetText(Canvas canvas, int alpha) {
-        mTextPaint.setAlpha(0);
+        //下面两行代码顺序不能颠倒，原因：setAlpha() is the helper to setColor(), that only assigns the color's alpha value,
+        //leaving its r,g,b values unchanged.
+        //颠倒的话setAlpha()将相当于没有起到作用
         mTextPaint.setColor(mColor);
+        mTextPaint.setAlpha(alpha);
         canvas.drawText(mText,getMeasuredWidth()/2-mTextBounds.width()/2,mIconRect.bottom+mTextBounds.height(),mTextPaint);
 
     }
